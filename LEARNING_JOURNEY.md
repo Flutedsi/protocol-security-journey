@@ -1,27 +1,28 @@
-## 🧭 我的协议安全学习之旅
+// ...existing code...
+## 🧭 My Protocol Security Learning Journey
 
-> “(ps:这段时间在准备PM的工作内容，所以耽搁了一些时间)我之前在应用层构建安全工具，像是在处理‘症状’一般；现在的我渴望学习如何守护整个系统的‘免疫组织’。”
+> “(ps: I've been preparing product manager work recently, so this was delayed) I used to build security tools at the application layer, which felt like treating symptoms; now I want to learn how to protect the system's 'immune system' as a whole.”
 
-### 为什么转向协议安全？
+### Why shift to protocol security?
 
-开发钱包风险检测工具时，我专注于分析链上的交易模式。但我逐渐意识到，许多应用层的风险，比如前两天分析的Balancer事件，其根源在于底层协议的设计与交互。这引发了我更深的好奇：
+When building wallet risk detection tools, I focused on analyzing on-chain transaction patterns. Over time I realized many application-layer risks—like the recent Balancer incident I analyzed—stem from the underlying protocol design and interactions. This sparked deeper curiosity:
 
-- 当我们在前端与一个DApp交互时，背后是**执行层与共识层**如何通过引擎API进行信任协作？
-- **EIP-1559** 的动态费用机制，如何从经济层面加固网络的安全？
-- **EIP-4844** 为L2引入的Blob空间，在提升扩展性的同时，是否带来了新的密码学攻击面？
+- When we interact with a DApp in the frontend, how do the execution layer and consensus layer coordinate trust via engine APIs?
+- How does EIP-1559's dynamic fee mechanism strengthen network security from an economic perspective?
+- Does EIP-4844's introduction of blob space for L2s, while improving scalability, introduce new cryptographic attack surfaces?
 
-我发现，回答这些问题——即理解并保障那些最基础的、全局性的信任层——比在应用层识别单个风险模式，带来了更大的智力挑战和价值感。
+I found that answering these questions—understanding and safeguarding the most fundamental, global trust layers—is more intellectually challenging and rewarding than identifying individual risk patterns at the application layer.
 
-### 我的实践与探索
+### My practices and exploration
 
-为了系统性地构建认知，我开始了以下实践：
+To build systematic understanding, I started the following practices:
 
-1.  **运行节点**：在Sepolia测试网运行 `geth` 节点，亲手触碰区块链的“心跳”。
-2.  **研究EIP**：深入阅读 EIP-1559 与 EIP-4844，分析其解决的核心问题与引入的新安全考量。
-3.  **密码学基础**：梳理哈希、Merkle树、ECDSA与BLS签名在协议中各司其职的作用。
+1.  Run a node: operated a geth node on the Sepolia testnet to directly interact with the blockchain's "heartbeat".
+2.  Study EIPs: read EIP-1559 and EIP-4844 in depth, analyzing the core problems they solve and the new security considerations they introduce.
+3.  Cryptography fundamentals: reviewed the roles of hashes, Merkle trees, ECDSA, and BLS signatures within protocol design.
 
-### 下一步
+### Next steps
 
-这仅仅是一个开始。我渴望能将这份对底层原理的热情，在像以太坊基金会这样的环境中，转化为对协议安全的实质性贡献。我的目标是从一个工具的使用者与观察者，成长为一个生态基础设施的维护与建设者。
+This is only the beginning. I hope to turn this passion for fundamentals into substantive contributions to protocol security at organizations like the Ethereum Foundation. My goal is to grow from a user and observer of tools into a maintainer and builder of core ecosystem infrastructure.
 
-*（本日志最后更新于：2025年11月）*
+*(Last updated: November 2025)*
